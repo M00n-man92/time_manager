@@ -43,7 +43,7 @@ def timerr(count):
     else:
         canvas.itemconfig(can_text,text=f"{count_min} : {count_sec}")
     if count>0:
-        timeing=window.after(10,timerr,count-1)
+        timeing=window.after(1000,timerr,count-1)
     elif count==0:
         if w==r:
             if w ==4 and r==4:
